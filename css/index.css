@@ -1,0 +1,126 @@
+/* bootstrap overwrite */
+.nav-item{
+  position: relative;
+  cursor: pointer;
+}
+/*  */
+.icon{
+  margin:0 5px;
+  cursor: pointer;
+}
+.bb-popover{
+  position: relative;
+  z-index: 1;
+  animation: skew .3s .4s ease-out forwards;
+  opacity: 0
+}
+.bb-popover-arrow{
+position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+    border-radius: 1px 0 0 0;
+    right: 25px;
+  box-shadow: 0 4px 22px rgba(202,202,202,0.25);
+  background-color: #fff;
+  -ms-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg)
+}
+.bb-popover-content{
+  position: absolute;
+  right: 0;
+    top: 5px;
+  width: 300px;
+  background: #fff;
+  padding: 10px;
+  cursor: default;
+  box-shadow: 0 4px 22px rgba(202,202,202,0.25);
+   border-radius: 4px;
+}
+.bb-list{
+  width: 100%;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bb-list.large{
+  font-size: 15px;
+}
+.bb-list span{
+  display: inline-block;
+}
+.bb-list-total{
+  padding-top: 5px;
+}
+.bb-list-total{
+  border-top: 1px dashed #666;
+}
+.bb-popover-footer{
+  padding-top: 5px;
+}
+.item-name{
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.quantity{
+  height: 24px;
+  color: #28a745;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d4d5d9;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.iconSecondary{
+  color: #333;
+}
+.empty_cart_template
+{
+    text-align: center;
+    padding: 14px 0px;
+    font-size: 25px;
+
+}
+.cart_dot
+{
+  display: inline-block;
+  background: #86c232;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  font-size: 8px;
+  position: absolute;
+  top: -4px;
+  left: 13px;
+  padding-top: 1px;
+  color: white;
+  text-align: center;
+}
+.cart_function .nav-link
+{
+  position: relative;
+}
+.empty_cart_template span
+{
+  color:#b7b7b7ad;
+}
+@keyframes skew {
+  0% {
+      opacity: 0;
+      transform: translate3d(0,5px,0)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0)
+  }
+}
+.hide
+{
+    display: none;
+}
